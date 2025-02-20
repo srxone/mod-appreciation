@@ -573,10 +573,11 @@ private:
             return;
         }
 
-		if (sConfigMgr->GetOption<bool>("Appreciation.DestroyCertificate.Enabled", true))
+		if (!sConfigMgr->GetOption<bool>("Appreciation.DestroyCertificate.Enabled", true))
 		{
-			player->DestroyItemCount(ITEM_CERTIFICATE, 1, true);
+            return;
 		}
+			player->DestroyItemCount(ITEM_CERTIFICATE, 1, true);
     }
 
     std::vector<std::vector<int>> GetItemList(uint32 classId, uint8 specialization)
