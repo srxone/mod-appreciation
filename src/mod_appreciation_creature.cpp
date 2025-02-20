@@ -573,7 +573,7 @@ private:
             return;
         }
 
-		if (!sConfigMgr->GetOption<bool>("Appreciation.DestroyCertificate.Enabled", true))
+		if (sConfigMgr->GetOption<bool>("Appreciation.DestroyCertificate.Enabled", true))
 		{
             return;
 		}
