@@ -11,6 +11,15 @@
 Appreciation.RequireCertificate.Enabled = 1
 
 #################################
+#
+# Destroy certificate after use
+#
+# Default: 1 (enabled)
+#
+
+Appreciation.DestroyCertificate.Enabled = 0
+
+#################################
 
 #################################
 #
