@@ -577,7 +577,7 @@ private:
 		{
             return;
 		}
-			//player->DestroyItemCount(ITEM_CERTIFICATE, 1, true);
+			player->DestroyItemCount(ITEM_CERTIFICATE, 1, true);
     }
 
     std::vector<std::vector<int>> GetItemList(uint32 classId, uint8 specialization)
